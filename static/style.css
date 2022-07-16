@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+}
+
+body{
+    background-color: #8bc34a00;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.menu ul{
+    display: inline-flex;
+    margin: 70px;
+    font-size: 25px;
+}
+
+.menu ul li{
+    list-style: none;
+    margin: 0 60px;
+    color: black;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 170px;
+    margin-top: -13px;
+    margin-right: 13px;
+ }
+
+.banner{
+    width:80%;
+    height:70%;
+    top:23%;
+    left: 140px;
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.header{
+    font-size: 40px;
+}
+
+.biography{
+    width:80%;
+    height:50%;
+    top:28%;
+    left: 140px;
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+
+.contactinfo{
+    width:80%;
+    height:100%;
+    top:90%;
+    left: 140px;
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.charities{
+    width:80%;
+    height:50%;
+    top:28%;
+    left: 140px;
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.charitylist{
+    left: 60px;
+    position: absolute;
+    height:100%;
+    font-size:25px;
+}
+
+.recentnews{
+    text-align: center;
+    font-size:50px;
+}
+
+.caption{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+
+.datatable{
+    width: 85%;
+    height:70%;
+    top:45%;
+    left: 130px;
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+}

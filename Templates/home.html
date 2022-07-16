@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Corona Cure</title>
+    <link rel="stylesheet"  href="{{ url_for('static', filename='style.css')}}">
+    <link rel="icon" href="{{ url_for('static', filename='coronacurelogo.png')}}">
+    <style>
+         table, th, td {
+            border: 1px solid black;
+             border-collapse: collapse;
+         }
+      </style>
+</head>
+
+<body>
+<STYLE>A {text-decoration: none; color: black;} </STYLE>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="logo"><a href="https://www.coronacures19.com/home"><img src="static/coronacurelogo.png"></a></li>
+                <li><a href="https://www.coronacures19.com/home">Home</a></li>
+                <li><a href="https://www.coronacures19.com/recentnews">Recent News</a></li>
+                <li><a href="https://www.coronacures19.com/howtohelp">How to Help</a></li>
+                <li><a href="https://www.coronacures19.com/about">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="app-text">
+            <h1 class="header">Covid-19 Vaccine Tracker</h1>
+            <br>
+            <hr>
+            <p>Corona Cure is a website created to keep updates on all of the latest developments on a Covid-19 vaccine. Our mission is to constantly update information from reliable databases for the public.  </p>
+        </div>
+    </div>
+
+<div class="datatable">
+    <table>
+        <thead>
+        <caption class="caption"><h2>Covid-19 Vaccine Database</h2></caption>
+         <tr>
+             <th>Vaccine Name</th>
+             <th>Developer</th>
+             <th>Phase Trial</th>
+             <th>Expected Arrival</th>
+         </tr>
+        </thead>
+        <tbody>
+
+        {% for i in range(0,counter) %}
+        <tr>
+             <td>{{vaccinename[i]}}</td>
+             <td>{{developer[i]}}</td>
+             <td>{{phase[i]}}</td>
+             <td>{{expect[i]}}</td>
+         </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
